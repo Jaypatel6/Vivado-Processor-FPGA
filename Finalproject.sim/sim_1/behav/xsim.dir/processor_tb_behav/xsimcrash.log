@@ -1,0 +1,5 @@
+Unable to capture context for thread 6300 in process 3580, can not generate back trace
+Unable to capture context for thread 6424 in process 3580, can not generate back trace
+Unable to capture context for thread 6684 in process 3580, can not generate back trace
+Exception at PC 0x000007FEFD75A06D
+EXCEPTION_NONCONTINUABLE, hence exiting

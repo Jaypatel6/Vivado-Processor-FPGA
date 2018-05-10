@@ -1,0 +1,850 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Tue Nov 29 22:10:29 2016
+# Process ID: 3252
+# Current directory: C:/Users/Dilan/Finalproject/Finalproject.runs/synth_1
+# Command line: vivado.exe -log basys3_wrapper.vds -mode batch -messageDb vivado.pb -notrace -source basys3_wrapper.tcl
+# Log file: C:/Users/Dilan/Finalproject/Finalproject.runs/synth_1/basys3_wrapper.vds
+# Journal file: C:/Users/Dilan/Finalproject/Finalproject.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source basys3_wrapper.tcl -notrace
+Command: synth_design -top basys3_wrapper -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5300 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 275.016 ; gain = 67.902
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'basys3_wrapper' [C:/Users/Dilan/Finalproject/Finalproject.srcs/basys3_wrapper.sv:23]
+INFO: [Synth 8-638] synthesizing module 'processor' [C:/Users/Dilan/Documents/Downloads/final/fp_Team DJ_processor.sv:23]
+INFO: [Synth 8-638] synthesizing module 'counter6bit' [C:/Users/Dilan/Documents/Downloads/final/counter6bit.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'counter6bit' (1#1) [C:/Users/Dilan/Documents/Downloads/final/counter6bit.sv:23]
+INFO: [Synth 8-638] synthesizing module 'instruction_memory' [C:/Users/Dilan/Documents/Downloads/final/instruction_memory.sv:23]
+WARNING: [Synth 8-567] referenced signal 'inst_mem' should be on the sensitivity list [C:/Users/Dilan/Documents/Downloads/final/instruction_memory.sv:48]
+INFO: [Synth 8-256] done synthesizing module 'instruction_memory' (2#1) [C:/Users/Dilan/Documents/Downloads/final/instruction_memory.sv:23]
+INFO: [Synth 8-638] synthesizing module 'controller' [C:/Users/Dilan/Documents/Downloads/final/controller.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'controller' (3#1) [C:/Users/Dilan/Documents/Downloads/final/controller.sv:23]
+INFO: [Synth 8-638] synthesizing module 'reg_file' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'reg_file' (4#1) [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:23]
+INFO: [Synth 8-638] synthesizing module 'signext15_32' [C:/Users/Dilan/Documents/Downloads/final/signext15_32.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'signext15_32' (5#1) [C:/Users/Dilan/Documents/Downloads/final/signext15_32.sv:23]
+INFO: [Synth 8-638] synthesizing module 'mux21_32' [C:/Users/Dilan/Documents/Downloads/final/fp_Team DJ_processor.sv:106]
+INFO: [Synth 8-256] done synthesizing module 'mux21_32' (6#1) [C:/Users/Dilan/Documents/Downloads/final/fp_Team DJ_processor.sv:106]
+INFO: [Synth 8-638] synthesizing module 'alu_32bit' [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:23]
+	Parameter DWIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'alu_1bit' [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:72]
+INFO: [Synth 8-638] synthesizing module 'arithmetic_unit' [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:115]
+INFO: [Synth 8-638] synthesizing module 'mux8_1' [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:185]
+INFO: [Synth 8-638] synthesizing module 'mux41' [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:224]
+INFO: [Synth 8-638] synthesizing module 'mux21' [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:252]
+INFO: [Synth 8-256] done synthesizing module 'mux21' (7#1) [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:252]
+INFO: [Synth 8-256] done synthesizing module 'mux41' (8#1) [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:224]
+INFO: [Synth 8-256] done synthesizing module 'mux8_1' (9#1) [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:185]
+INFO: [Synth 8-638] synthesizing module 'add_sub' [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:262]
+INFO: [Synth 8-256] done synthesizing module 'add_sub' (10#1) [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:262]
+WARNING: [Synth 8-3848] Net z in module/entity arithmetic_unit does not have driver. [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:134]
+INFO: [Synth 8-256] done synthesizing module 'arithmetic_unit' (11#1) [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:115]
+INFO: [Synth 8-638] synthesizing module 'logic_unit' [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:162]
+WARNING: [Synth 8-3848] Net z in module/entity logic_unit does not have driver. [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:175]
+INFO: [Synth 8-256] done synthesizing module 'logic_unit' (12#1) [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:162]
+WARNING: [Synth 8-3848] Net z_flag in module/entity alu_1bit does not have driver. [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:81]
+WARNING: [Synth 8-3848] Net o_flag in module/entity alu_1bit does not have driver. [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:82]
+WARNING: [Synth 8-3848] Net s_flag in module/entity alu_1bit does not have driver. [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:83]
+INFO: [Synth 8-256] done synthesizing module 'alu_1bit' (13#1) [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:72]
+WARNING: [Synth 8-350] instance 'alui' of module 'alu_1bit' requires 10 connections, but only 7 given [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:56]
+WARNING: [Synth 8-350] instance 'alui' of module 'alu_1bit' requires 10 connections, but only 7 given [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:56]
+WARNING: [Synth 8-350] instance 'alui' of module 'alu_1bit' requires 10 connections, but only 7 given [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:56]
+WARNING: [Synth 8-350] instance 'alui' of module 'alu_1bit' requires 10 connections, but only 7 given [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:56]
+WARNING: [Synth 8-350] instance 'alui' of module 'alu_1bit' requires 10 connections, but only 7 given [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:56]
+WARNING: [Synth 8-350] instance 'alui' of module 'alu_1bit' requires 10 connections, but only 7 given [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:56]
+WARNING: [Synth 8-350] instance 'alui' of module 'alu_1bit' requires 10 connections, but only 7 given [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:56]
+WARNING: [Synth 8-350] instance 'alui' of module 'alu_1bit' requires 10 connections, but only 7 given [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:56]
+WARNING: [Synth 8-350] instance 'alui' of module 'alu_1bit' requires 10 connections, but only 7 given [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:56]
+WARNING: [Synth 8-350] instance 'alui' of module 'alu_1bit' requires 10 connections, but only 7 given [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:56]
+WARNING: [Synth 8-350] instance 'alui' of module 'alu_1bit' requires 10 connections, but only 7 given [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:56]
+WARNING: [Synth 8-350] instance 'alui' of module 'alu_1bit' requires 10 connections, but only 7 given [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:56]
+WARNING: [Synth 8-350] instance 'alui' of module 'alu_1bit' requires 10 connections, but only 7 given [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:56]
+WARNING: [Synth 8-350] instance 'alui' of module 'alu_1bit' requires 10 connections, but only 7 given [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:56]
+WARNING: [Synth 8-350] instance 'alui' of module 'alu_1bit' requires 10 connections, but only 7 given [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:56]
+WARNING: [Synth 8-350] instance 'alui' of module 'alu_1bit' requires 10 connections, but only 7 given [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:56]
+WARNING: [Synth 8-350] instance 'alui' of module 'alu_1bit' requires 10 connections, but only 7 given [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:56]
+WARNING: [Synth 8-350] instance 'alui' of module 'alu_1bit' requires 10 connections, but only 7 given [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:56]
+WARNING: [Synth 8-350] instance 'alui' of module 'alu_1bit' requires 10 connections, but only 7 given [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:56]
+WARNING: [Synth 8-350] instance 'alui' of module 'alu_1bit' requires 10 connections, but only 7 given [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:56]
+WARNING: [Synth 8-350] instance 'alui' of module 'alu_1bit' requires 10 connections, but only 7 given [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:56]
+WARNING: [Synth 8-350] instance 'alui' of module 'alu_1bit' requires 10 connections, but only 7 given [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:56]
+WARNING: [Synth 8-350] instance 'alui' of module 'alu_1bit' requires 10 connections, but only 7 given [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:56]
+WARNING: [Synth 8-350] instance 'alui' of module 'alu_1bit' requires 10 connections, but only 7 given [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:56]
+WARNING: [Synth 8-350] instance 'alui' of module 'alu_1bit' requires 10 connections, but only 7 given [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:56]
+WARNING: [Synth 8-350] instance 'alui' of module 'alu_1bit' requires 10 connections, but only 7 given [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:56]
+WARNING: [Synth 8-350] instance 'alui' of module 'alu_1bit' requires 10 connections, but only 7 given [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:56]
+WARNING: [Synth 8-350] instance 'alui' of module 'alu_1bit' requires 10 connections, but only 7 given [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:56]
+WARNING: [Synth 8-350] instance 'alui' of module 'alu_1bit' requires 10 connections, but only 7 given [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:56]
+WARNING: [Synth 8-350] instance 'alui' of module 'alu_1bit' requires 10 connections, but only 7 given [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:56]
+WARNING: [Synth 8-350] instance 'alui' of module 'alu_1bit' requires 10 connections, but only 7 given [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:56]
+WARNING: [Synth 8-350] instance 'alu0' of module 'alu_1bit' requires 10 connections, but only 7 given [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:40]
+INFO: [Synth 8-256] done synthesizing module 'alu_32bit' (14#1) [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:23]
+INFO: [Synth 8-638] synthesizing module 'data_memory' [C:/Users/Dilan/Documents/Downloads/final/data_memory.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'data_memory' (15#1) [C:/Users/Dilan/Documents/Downloads/final/data_memory.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'processor' (16#1) [C:/Users/Dilan/Documents/Downloads/final/fp_Team DJ_processor.sv:23]
+INFO: [Synth 8-638] synthesizing module 'seg_display' [C:/Users/Dilan/Finalproject/Finalproject.srcs/seg_display.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'seg_display' (17#1) [C:/Users/Dilan/Finalproject/Finalproject.srcs/seg_display.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'basys3_wrapper' (18#1) [C:/Users/Dilan/Finalproject/Finalproject.srcs/basys3_wrapper.sv:23]
+WARNING: [Synth 8-3917] design basys3_wrapper has port dp driven by constant 1
+WARNING: [Synth 8-3331] design alu_1bit has unconnected port z_flag
+WARNING: [Synth 8-3331] design alu_1bit has unconnected port o_flag
+WARNING: [Synth 8-3331] design alu_1bit has unconnected port s_flag
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 311.398 ; gain = 104.285
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin b1:h to constant 0 [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:126]
+WARNING: [Synth 8-3295] tying undriven pin c1:h to constant 0 [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:138]
+WARNING: [Synth 8-3295] tying undriven pin l1:e to constant 0 [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:170]
+WARNING: [Synth 8-3295] tying undriven pin l1:g to constant 0 [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:170]
+WARNING: [Synth 8-3295] tying undriven pin l1:h to constant 0 [C:/Users/Dilan/Documents/Downloads/final/mtp_Team DJ_alu.sv:170]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 311.398 ; gain = 104.285
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Dilan/Finalproject/Finalproject.srcs/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/Dilan/Finalproject/Finalproject.srcs/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Dilan/Finalproject/Finalproject.srcs/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/basys3_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/basys3_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 612.535 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 612.535 ; gain = 405.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 612.535 ; gain = 405.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 612.535 ; gain = 405.422
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "REGwrite0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[63]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[62]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[61]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[60]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[59]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[58]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[57]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[56]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[55]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[54]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[53]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[52]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[51]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[50]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[49]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[48]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[47]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[46]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[45]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[44]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[43]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[42]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[41]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[40]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[39]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[38]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[37]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[36]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[35]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[34]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[33]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[32]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "mode" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "z_flag" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 612.535 ; gain = 405.422
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 33    
++---Registers : 
+	               32 Bit    Registers := 64    
+	                6 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	  64 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 3     
+	  16 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	  12 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 65    
+	   2 Input      2 Bit        Muxes := 2     
+	  12 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 896   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module counter6bit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 1     
+Module instruction_memory 
+Detailed RTL Component Info : 
++---Muxes : 
+	  64 Input     32 Bit        Muxes := 1     
+Module controller 
+Detailed RTL Component Info : 
++---Muxes : 
+	  12 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 3     
+Module reg_file 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 64    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 64    
+Module mux21_32 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module mux21 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module add_sub 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module arithmetic_unit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module logic_unit 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module alu_32bit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      1 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 65    
+	   2 Input      2 Bit        Muxes := 1     
+Module seg_display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	  16 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 612.535 ; gain = 405.422
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "z_flag" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3917] design basys3_wrapper has port dp driven by constant 1
+WARNING: [Synth 8-3331] design alu_1bit has unconnected port z_flag
+WARNING: [Synth 8-3331] design alu_1bit has unconnected port o_flag
+WARNING: [Synth 8-3331] design alu_1bit has unconnected port s_flag
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 612.535 ; gain = 405.422
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 612.535 ; gain = 405.422
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++---------------+--------------------------+-----------+----------------------+------------------+
+|Module Name    | RTL Object               | Inference | Size (Depth x Width) | Primitives       | 
++---------------+--------------------------+-----------+----------------------+------------------+
+|basys3_wrapper | processor_31L/dm/mem_reg | Implied   | 128 x 32             | RAM128X1S x 32   | 
++---------------+--------------------------+-----------+----------------------+------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[63][15]' (FDE) to 'processor_31L/rf/mem_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[62][15]' (FDE) to 'processor_31L/rf/mem_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[61][15]' (FDE) to 'processor_31L/rf/mem_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[60][15]' (FDE) to 'processor_31L/rf/mem_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[59][15]' (FDE) to 'processor_31L/rf/mem_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[58][15]' (FDE) to 'processor_31L/rf/mem_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[57][15]' (FDE) to 'processor_31L/rf/mem_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[56][15]' (FDE) to 'processor_31L/rf/mem_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[55][15]' (FDE) to 'processor_31L/rf/mem_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[54][15]' (FDE) to 'processor_31L/rf/mem_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[53][15]' (FDE) to 'processor_31L/rf/mem_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[52][15]' (FDE) to 'processor_31L/rf/mem_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[51][15]' (FDE) to 'processor_31L/rf/mem_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[50][15]' (FDE) to 'processor_31L/rf/mem_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[49][15]' (FDE) to 'processor_31L/rf/mem_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[48][15]' (FDE) to 'processor_31L/rf/mem_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[47][15]' (FDE) to 'processor_31L/rf/mem_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[46][15]' (FDE) to 'processor_31L/rf/mem_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[45][15]' (FDE) to 'processor_31L/rf/mem_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[44][15]' (FDE) to 'processor_31L/rf/mem_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[43][15]' (FDE) to 'processor_31L/rf/mem_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[42][15]' (FDE) to 'processor_31L/rf/mem_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[41][15]' (FDE) to 'processor_31L/rf/mem_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[40][15]' (FDE) to 'processor_31L/rf/mem_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[39][15]' (FDE) to 'processor_31L/rf/mem_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[38][15]' (FDE) to 'processor_31L/rf/mem_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[37][15]' (FDE) to 'processor_31L/rf/mem_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[36][15]' (FDE) to 'processor_31L/rf/mem_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[35][15]' (FDE) to 'processor_31L/rf/mem_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[34][15]' (FDE) to 'processor_31L/rf/mem_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[33][15]' (FDE) to 'processor_31L/rf/mem_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[32][15]' (FDE) to 'processor_31L/rf/mem_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[31][15]' (FDE) to 'processor_31L/rf/mem_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[30][15]' (FDE) to 'processor_31L/rf/mem_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[29][15]' (FDE) to 'processor_31L/rf/mem_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[28][15]' (FDE) to 'processor_31L/rf/mem_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[27][15]' (FDE) to 'processor_31L/rf/mem_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[26][15]' (FDE) to 'processor_31L/rf/mem_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[25][15]' (FDE) to 'processor_31L/rf/mem_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[24][15]' (FDE) to 'processor_31L/rf/mem_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[23][15]' (FDE) to 'processor_31L/rf/mem_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[22][15]' (FDE) to 'processor_31L/rf/mem_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[21][15]' (FDE) to 'processor_31L/rf/mem_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[20][15]' (FDE) to 'processor_31L/rf/mem_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[19][15]' (FDE) to 'processor_31L/rf/mem_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[18][15]' (FDE) to 'processor_31L/rf/mem_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[17][15]' (FDE) to 'processor_31L/rf/mem_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[16][15]' (FDE) to 'processor_31L/rf/mem_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[15][15]' (FDE) to 'processor_31L/rf/mem_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[14][15]' (FDE) to 'processor_31L/rf/mem_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[13][15]' (FDE) to 'processor_31L/rf/mem_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[12][15]' (FDE) to 'processor_31L/rf/mem_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[11][15]' (FDE) to 'processor_31L/rf/mem_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[10][15]' (FDE) to 'processor_31L/rf/mem_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[9][15]' (FDE) to 'processor_31L/rf/mem_reg[8][15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/rf /\mem_reg[8][15] )
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[63][13]' (FDE) to 'processor_31L/rf/mem_reg[8][13]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[62][13]' (FDE) to 'processor_31L/rf/mem_reg[8][13]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[61][13]' (FDE) to 'processor_31L/rf/mem_reg[8][13]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[60][13]' (FDE) to 'processor_31L/rf/mem_reg[8][13]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[59][13]' (FDE) to 'processor_31L/rf/mem_reg[8][13]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[58][13]' (FDE) to 'processor_31L/rf/mem_reg[8][13]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[57][13]' (FDE) to 'processor_31L/rf/mem_reg[8][13]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[56][13]' (FDE) to 'processor_31L/rf/mem_reg[8][13]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[55][13]' (FDE) to 'processor_31L/rf/mem_reg[8][13]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[54][13]' (FDE) to 'processor_31L/rf/mem_reg[8][13]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[53][13]' (FDE) to 'processor_31L/rf/mem_reg[8][13]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[52][13]' (FDE) to 'processor_31L/rf/mem_reg[8][13]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[51][13]' (FDE) to 'processor_31L/rf/mem_reg[8][13]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[50][13]' (FDE) to 'processor_31L/rf/mem_reg[8][13]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[49][13]' (FDE) to 'processor_31L/rf/mem_reg[8][13]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[48][13]' (FDE) to 'processor_31L/rf/mem_reg[8][13]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[47][13]' (FDE) to 'processor_31L/rf/mem_reg[8][13]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[46][13]' (FDE) to 'processor_31L/rf/mem_reg[8][13]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[45][13]' (FDE) to 'processor_31L/rf/mem_reg[8][13]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[44][13]' (FDE) to 'processor_31L/rf/mem_reg[8][13]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[43][13]' (FDE) to 'processor_31L/rf/mem_reg[8][13]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[42][13]' (FDE) to 'processor_31L/rf/mem_reg[8][13]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[41][13]' (FDE) to 'processor_31L/rf/mem_reg[8][13]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[40][13]' (FDE) to 'processor_31L/rf/mem_reg[8][13]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[39][13]' (FDE) to 'processor_31L/rf/mem_reg[8][13]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[38][13]' (FDE) to 'processor_31L/rf/mem_reg[8][13]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[37][13]' (FDE) to 'processor_31L/rf/mem_reg[8][13]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[36][13]' (FDE) to 'processor_31L/rf/mem_reg[8][13]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[35][13]' (FDE) to 'processor_31L/rf/mem_reg[8][13]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[34][13]' (FDE) to 'processor_31L/rf/mem_reg[8][13]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[33][13]' (FDE) to 'processor_31L/rf/mem_reg[8][13]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[32][13]' (FDE) to 'processor_31L/rf/mem_reg[8][13]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[31][13]' (FDE) to 'processor_31L/rf/mem_reg[8][13]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[30][13]' (FDE) to 'processor_31L/rf/mem_reg[8][13]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[29][13]' (FDE) to 'processor_31L/rf/mem_reg[8][13]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[28][13]' (FDE) to 'processor_31L/rf/mem_reg[8][13]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[27][13]' (FDE) to 'processor_31L/rf/mem_reg[8][13]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[26][13]' (FDE) to 'processor_31L/rf/mem_reg[8][13]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[25][13]' (FDE) to 'processor_31L/rf/mem_reg[8][13]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[24][13]' (FDE) to 'processor_31L/rf/mem_reg[8][13]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[23][13]' (FDE) to 'processor_31L/rf/mem_reg[8][13]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[22][13]' (FDE) to 'processor_31L/rf/mem_reg[8][13]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[21][13]' (FDE) to 'processor_31L/rf/mem_reg[8][13]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[20][13]' (FDE) to 'processor_31L/rf/mem_reg[8][13]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/rf/mem_reg[19][13]' (FDE) to 'processor_31L/rf/mem_reg[8][13]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/rf /\mem_reg[8][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/rf /\mem_reg[8][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/rf /\mem_reg[8][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/rf /\mem_reg[8][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/rf /\mem_reg[8][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/rf /\mem_reg[8][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/rf /\mem_reg[8][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/rf /\mem_reg[8][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/rf /\mem_reg[8][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/rf /\mem_reg[8][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/rf /\mem_reg[8][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/rf /\mem_reg[8][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/rf /\mem_reg[8][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/rf /\mem_reg[8][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/rf /\mem_reg[8][2] )
+WARNING: [Synth 8-3332] Sequential element (mem_reg[0][31]) is unused and will be removed from module reg_file.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[31] with 1st driver pin 'processor_31L/rf/mem_reg[0][31]/Q' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[31] with 2nd driver pin 'GND' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[31] is connected to constant driver, other driver is ignored [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+WARNING: [Synth 8-3332] Sequential element (mem_reg[0][30]) is unused and will be removed from module reg_file.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[30] with 1st driver pin 'processor_31L/rf/mem_reg[0][30]/Q' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[30] with 2nd driver pin 'GND' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[30] is connected to constant driver, other driver is ignored [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+WARNING: [Synth 8-3332] Sequential element (mem_reg[0][29]) is unused and will be removed from module reg_file.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[29] with 1st driver pin 'processor_31L/rf/mem_reg[0][29]/Q' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[29] with 2nd driver pin 'GND' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[29] is connected to constant driver, other driver is ignored [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+WARNING: [Synth 8-3332] Sequential element (mem_reg[0][28]) is unused and will be removed from module reg_file.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[28] with 1st driver pin 'processor_31L/rf/mem_reg[0][28]/Q' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[28] with 2nd driver pin 'GND' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[28] is connected to constant driver, other driver is ignored [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+WARNING: [Synth 8-3332] Sequential element (mem_reg[0][27]) is unused and will be removed from module reg_file.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[27] with 1st driver pin 'processor_31L/rf/mem_reg[0][27]/Q' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[27] with 2nd driver pin 'GND' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[27] is connected to constant driver, other driver is ignored [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+WARNING: [Synth 8-3332] Sequential element (mem_reg[0][26]) is unused and will be removed from module reg_file.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[26] with 1st driver pin 'processor_31L/rf/mem_reg[0][26]/Q' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[26] with 2nd driver pin 'GND' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[26] is connected to constant driver, other driver is ignored [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+WARNING: [Synth 8-3332] Sequential element (mem_reg[0][25]) is unused and will be removed from module reg_file.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[25] with 1st driver pin 'processor_31L/rf/mem_reg[0][25]/Q' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[25] with 2nd driver pin 'GND' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[25] is connected to constant driver, other driver is ignored [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+WARNING: [Synth 8-3332] Sequential element (mem_reg[0][24]) is unused and will be removed from module reg_file.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[24] with 1st driver pin 'processor_31L/rf/mem_reg[0][24]/Q' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[24] with 2nd driver pin 'GND' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[24] is connected to constant driver, other driver is ignored [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+WARNING: [Synth 8-3332] Sequential element (mem_reg[0][23]) is unused and will be removed from module reg_file.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[23] with 1st driver pin 'processor_31L/rf/mem_reg[0][23]/Q' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[23] with 2nd driver pin 'GND' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[23] is connected to constant driver, other driver is ignored [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+WARNING: [Synth 8-3332] Sequential element (mem_reg[0][22]) is unused and will be removed from module reg_file.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[22] with 1st driver pin 'processor_31L/rf/mem_reg[0][22]/Q' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[22] with 2nd driver pin 'GND' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[22] is connected to constant driver, other driver is ignored [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+WARNING: [Synth 8-3332] Sequential element (mem_reg[0][21]) is unused and will be removed from module reg_file.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[21] with 1st driver pin 'processor_31L/rf/mem_reg[0][21]/Q' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[21] with 2nd driver pin 'GND' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[21] is connected to constant driver, other driver is ignored [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+WARNING: [Synth 8-3332] Sequential element (mem_reg[0][20]) is unused and will be removed from module reg_file.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[20] with 1st driver pin 'processor_31L/rf/mem_reg[0][20]/Q' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[20] with 2nd driver pin 'GND' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[20] is connected to constant driver, other driver is ignored [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+WARNING: [Synth 8-3332] Sequential element (mem_reg[0][19]) is unused and will be removed from module reg_file.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[19] with 1st driver pin 'processor_31L/rf/mem_reg[0][19]/Q' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[19] with 2nd driver pin 'GND' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[19] is connected to constant driver, other driver is ignored [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+WARNING: [Synth 8-3332] Sequential element (mem_reg[0][18]) is unused and will be removed from module reg_file.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[18] with 1st driver pin 'processor_31L/rf/mem_reg[0][18]/Q' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[18] with 2nd driver pin 'GND' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[18] is connected to constant driver, other driver is ignored [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+WARNING: [Synth 8-3332] Sequential element (mem_reg[0][17]) is unused and will be removed from module reg_file.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[17] with 1st driver pin 'processor_31L/rf/mem_reg[0][17]/Q' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[17] with 2nd driver pin 'GND' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[17] is connected to constant driver, other driver is ignored [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+WARNING: [Synth 8-3332] Sequential element (mem_reg[0][16]) is unused and will be removed from module reg_file.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[16] with 1st driver pin 'processor_31L/rf/mem_reg[0][16]/Q' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[16] with 2nd driver pin 'GND' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[16] is connected to constant driver, other driver is ignored [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+WARNING: [Synth 8-3332] Sequential element (mem_reg[0][15]) is unused and will be removed from module reg_file.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[15] with 1st driver pin 'processor_31L/rf/mem_reg[0][15]/Q' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[15] with 2nd driver pin 'GND' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[15] is connected to constant driver, other driver is ignored [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+WARNING: [Synth 8-3332] Sequential element (mem_reg[0][14]) is unused and will be removed from module reg_file.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[14] with 1st driver pin 'processor_31L/rf/mem_reg[0][14]/Q' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[14] with 2nd driver pin 'GND' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[14] is connected to constant driver, other driver is ignored [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+WARNING: [Synth 8-3332] Sequential element (mem_reg[0][13]) is unused and will be removed from module reg_file.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[13] with 1st driver pin 'processor_31L/rf/mem_reg[0][13]/Q' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[13] with 2nd driver pin 'GND' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[13] is connected to constant driver, other driver is ignored [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+WARNING: [Synth 8-3332] Sequential element (mem_reg[0][12]) is unused and will be removed from module reg_file.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[12] with 1st driver pin 'processor_31L/rf/mem_reg[0][12]/Q' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[12] with 2nd driver pin 'GND' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[12] is connected to constant driver, other driver is ignored [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+WARNING: [Synth 8-3332] Sequential element (mem_reg[0][11]) is unused and will be removed from module reg_file.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[11] with 1st driver pin 'processor_31L/rf/mem_reg[0][11]/Q' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[11] with 2nd driver pin 'GND' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[11] is connected to constant driver, other driver is ignored [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+WARNING: [Synth 8-3332] Sequential element (mem_reg[0][10]) is unused and will be removed from module reg_file.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[10] with 1st driver pin 'processor_31L/rf/mem_reg[0][10]/Q' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[10] with 2nd driver pin 'GND' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[10] is connected to constant driver, other driver is ignored [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+WARNING: [Synth 8-3332] Sequential element (mem_reg[0][9]) is unused and will be removed from module reg_file.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[9] with 1st driver pin 'processor_31L/rf/mem_reg[0][9]/Q' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[9] with 2nd driver pin 'GND' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[9] is connected to constant driver, other driver is ignored [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+WARNING: [Synth 8-3332] Sequential element (mem_reg[0][8]) is unused and will be removed from module reg_file.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[8] with 1st driver pin 'processor_31L/rf/mem_reg[0][8]/Q' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[8] with 2nd driver pin 'GND' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[8] is connected to constant driver, other driver is ignored [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+WARNING: [Synth 8-3332] Sequential element (mem_reg[0][7]) is unused and will be removed from module reg_file.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[7] with 1st driver pin 'processor_31L/rf/mem_reg[0][7]/Q' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[7] with 2nd driver pin 'GND' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[7] is connected to constant driver, other driver is ignored [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+WARNING: [Synth 8-3332] Sequential element (mem_reg[0][6]) is unused and will be removed from module reg_file.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[6] with 1st driver pin 'processor_31L/rf/mem_reg[0][6]/Q' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[6] with 2nd driver pin 'GND' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[6] is connected to constant driver, other driver is ignored [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+WARNING: [Synth 8-3332] Sequential element (mem_reg[0][5]) is unused and will be removed from module reg_file.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[5] with 1st driver pin 'processor_31L/rf/mem_reg[0][5]/Q' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[5] with 2nd driver pin 'GND' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[5] is connected to constant driver, other driver is ignored [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+WARNING: [Synth 8-3332] Sequential element (mem_reg[0][4]) is unused and will be removed from module reg_file.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[4] with 1st driver pin 'processor_31L/rf/mem_reg[0][4]/Q' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[4] with 2nd driver pin 'GND' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[4] is connected to constant driver, other driver is ignored [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+WARNING: [Synth 8-3332] Sequential element (mem_reg[0][3]) is unused and will be removed from module reg_file.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[3] with 1st driver pin 'processor_31L/rf/mem_reg[0][3]/Q' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[3] with 2nd driver pin 'GND' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[3] is connected to constant driver, other driver is ignored [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+WARNING: [Synth 8-3332] Sequential element (mem_reg[0][2]) is unused and will be removed from module reg_file.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[2] with 1st driver pin 'processor_31L/rf/mem_reg[0][2]/Q' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[2] with 2nd driver pin 'GND' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[2] is connected to constant driver, other driver is ignored [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+WARNING: [Synth 8-3332] Sequential element (mem_reg[0][1]) is unused and will be removed from module reg_file.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[1] with 1st driver pin 'processor_31L/rf/mem_reg[0][1]/Q' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[1] with 2nd driver pin 'GND' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[1] is connected to constant driver, other driver is ignored [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+WARNING: [Synth 8-3332] Sequential element (mem_reg[0][0]) is unused and will be removed from module reg_file.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[0] with 1st driver pin 'processor_31L/rf/mem_reg[0][0]/Q' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net data63[0] with 2nd driver pin 'GND' [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net data63[0] is connected to constant driver, other driver is ignored [C:/Users/Dilan/Documents/Downloads/final/reg_file.sv:35]
+WARNING: [Synth 8-3332] Sequential element (mem_reg[63][31]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[63][30]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[63][29]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[63][28]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[63][27]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[63][26]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[63][25]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[63][24]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[63][23]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[63][22]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[63][21]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[63][20]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[63][19]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[63][18]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[63][17]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[63][16]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[62][31]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[62][30]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[62][29]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[62][28]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[62][27]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[62][26]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[62][25]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[62][24]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[62][23]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[62][22]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[62][21]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[62][20]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[62][19]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[62][18]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[62][17]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[62][16]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[61][31]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[61][30]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[61][29]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[61][28]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[61][27]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[61][26]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[61][25]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[61][24]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[61][23]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[61][22]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[61][21]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[61][20]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[61][19]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[61][18]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[61][17]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[61][16]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[60][31]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[60][30]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[60][29]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[60][28]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[60][27]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[60][26]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[60][25]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[60][24]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[60][23]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[60][22]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[60][21]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[60][20]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[60][19]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[60][18]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[60][17]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[60][16]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[59][31]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[59][30]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[59][29]) is unused and will be removed from module reg_file.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[59][28]) is unused and will be removed from module reg_file.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 612.535 ; gain = 405.422
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 612.535 ; gain = 405.422
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 612.535 ; gain = 405.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 612.535 ; gain = 405.422
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 646.969 ; gain = 439.855
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 646.969 ; gain = 439.855
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 646.969 ; gain = 439.855
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 646.969 ; gain = 439.855
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 646.969 ; gain = 439.855
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 646.969 ; gain = 439.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 646.969 ; gain = 439.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 646.969 ; gain = 439.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 646.969 ; gain = 439.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     2|
+|2     |CARRY4    |     8|
+|3     |LUT1      |    31|
+|4     |LUT2      |    16|
+|5     |LUT3      |    22|
+|6     |LUT4      |    36|
+|7     |LUT5      |    65|
+|8     |LUT6      |    82|
+|9     |MUXF7     |    32|
+|10    |RAM128X1S |    16|
+|11    |FDCE      |     2|
+|12    |FDRE      |   147|
+|13    |IBUF      |     2|
+|14    |OBUF      |    12|
++------+----------+------+
+
+Report Instance Areas: 
++------+----------------+------------+------+
+|      |Instance        |Module      |Cells |
++------+----------------+------------+------+
+|1     |top             |            |   473|
+|2     |  processor_31L |processor   |   383|
+|3     |    PC          |counter6bit |    78|
+|4     |    dm          |data_memory |    16|
+|5     |    rf          |reg_file    |   208|
+|6     |  seg_display0  |seg_display |     8|
++------+----------------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 646.969 ; gain = 439.855
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 96 critical warnings and 1970 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:36 . Memory (MB): peak = 646.969 ; gain = 138.719
+Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 646.969 ; gain = 439.855
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 26 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  RAM128X1S => RAM128X1S (MUXF7, RAMS64E, RAMS64E): 16 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+234 Infos, 151 Warnings, 96 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 646.969 ; gain = 439.855
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 646.969 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 29 22:11:19 2016...

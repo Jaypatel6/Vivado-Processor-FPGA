@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  "../../../../Documents/Downloads/final/counter6bit.sv"
+sv xil_defaultlib  "../../../../Documents/Downloads/final/instruction_memory.sv"
+sv xil_defaultlib  "../../../../Documents/Downloads/final/controller.sv"
+sv xil_defaultlib  "../../../../Documents/Downloads/final/reg_file.sv"
+sv xil_defaultlib  "../../../../Documents/Downloads/final/data_memory.sv"
+sv xil_defaultlib  "../../../../Documents/Downloads/final/mtp_Team DJ_alu.sv"
+sv xil_defaultlib  "../../../../Documents/Downloads/final/signext15_32.sv"
+sv xil_defaultlib  "../../../../Documents/Downloads/final/fp_Team DJ_processor.sv"
+sv xil_defaultlib  "../../../../Documents/Downloads/final/processor_tb.sv"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
